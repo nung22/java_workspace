@@ -1,0 +1,10 @@
+package com.nicholasung.baristaChallenge;
+
+import java.util.ArrayList;
+
+public class Order {
+	// MEMBER VARIABLES
+	private String name;
+	private boolean ready;
+	private ArrayList<Item> items;
+}
