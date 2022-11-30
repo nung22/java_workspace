@@ -1,0 +1,12 @@
+package com.nicholasung.baristaChallenge;
+
+public class TestOrders {
+
+	public static void main(String[] args) {
+		// Create 2 orders for unspecified guests (without specifying a name)
+		Order order1 = new Order();
+		Order order2 = new Order();
+
+	}
+
+}

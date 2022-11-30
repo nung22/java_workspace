@@ -15,10 +15,10 @@ public class Order {
 	}
 	
 	// OVERLOADED CONSTRUCTOR
-	public Order(String name) {
+	public Order(String name, boolean ready, ArrayList<Item> items) {
 		this.name = name;
-		this.ready = false;
-		this.items = new ArrayList<Item>();
+		this.ready = ready;
+		this.items = items;
 	}
 	
 	// Class Methods
@@ -46,7 +46,7 @@ public class Order {
 		for(Item item : this.items) {
 			System.out.printf("%s - $%.2f%n",item.getName(),item.getPrice());
 		}
-		System.out.printf("Total: $%.2f%n%n",getOrderTotal());
+		System.out.printf("Total: $%.2f%n",getOrderTotal());
 	}
 	
 	// GETTERS & SETTERS
