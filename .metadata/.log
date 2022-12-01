@@ -2016,3 +2016,15 @@ java.lang.Exception: Resource '/careSoftInterfaces/src/com/caresoft/clinicapp/Us
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-01 10:10:15.749
+!MESSAGE executing callback sts4.classpath.WWHylZCC FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-12-01 10:10:15.750
+!MESSAGE No language server has registered to handle command 'sts4.classpath.WWHylZCC'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.WWHylZCC'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:177)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
